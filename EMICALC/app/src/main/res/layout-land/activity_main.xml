@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SICalculatorActivity" >
+
+    <TextView
+        android:id="@+id/Years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IR_bar"
+        android:layout_centerVertical="true"
+        android:text="2 Year(s)"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/year_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Years"
+        android:layout_below="@+id/Years"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/year_bar"
+        android:layout_alignBottom="@id/year_bar"
+        android:layout_marginTop="100dp"
+        android:layout_alignRight="@+id/year_bar"
+        android:text="Calculate" />
+
+    <EditText
+        android:id="@+id/IR_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Years"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Interest_Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/IR_bar"
+        android:layout_alignLeft="@+id/IR_bar"
+        android:layout_marginBottom="15dp"
+        android:text="Interest Rate"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/PA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PA_bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Principal Amount"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PA_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Interest_rate"
+        android:layout_below="@+id/PA"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>

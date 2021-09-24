@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_margin="30dp"
+        android:text="FONT WILL CHANGE here"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_margin="20dp"
+        android:text="CHANGE FONT SIZE"
+        android:textSize="25sp"
+        android:background="#2E6DDA"
+        android:textColor="#090707" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#296EAA"
+        android:text="CHANGE COLOR"
+        android:textColor="#0F0E0E"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="37dp"
+        android:text="COLOUR WILL CHANGE here"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

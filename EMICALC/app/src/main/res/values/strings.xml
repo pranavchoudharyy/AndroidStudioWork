@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EMI CALC</string>
+    <string name="loan_emi_calaculator">Loan/EMI Calaculator</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="loan_tenure">Loan Tenure</string>
+</resources>
